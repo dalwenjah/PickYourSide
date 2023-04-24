@@ -1,0 +1,137 @@
+@media (max-width: 81.25em) {
+  html {
+    font-size: 56%;
+  }
+}
+
+@media (max-width: 71.2em) {
+  .sign-in-modal {
+    width: 35%;
+  }
+  .inside-app-container {
+    gap: 4rem;
+  }
+  .btn-app-sides {
+    font-size: 1.2rem;
+  }
+
+  .add-versus-modal {
+    width: 40%;
+  }
+
+  .error-message {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+  }
+  .add-versus-modal .btn-align-sign-in {
+    margin-bottom: 0.8rem;
+  }
+  .btn-sign-in-out {
+    font-size: 1.6rem;
+    width: auto;
+    padding: 0.7rem 4rem;
+  }
+  .username-shown {
+    font-size: 1.5rem;
+  }
+  .logo-header:visited,
+  .logo-header:link {
+    font-size: 3.5rem;
+  }
+  .before-login-header {
+    font-size: 3.1rem;
+  }
+  .before-login-secondary-header {
+    font-size: 1rem;
+  }
+  .before-login-p {
+    font-size: 1.6rem;
+  }
+  .add-pick-boxing {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 51.25em) {
+  html {
+    font-size: 50%;
+  }
+  .inside-app-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+  }
+  .sign-in-modal-info {
+    font-size: 1.3rem;
+  }
+  .sign-in-input {
+    font-size: 1.2rem;
+    padding: 0.7rem;
+  }
+  .input-versus-both {
+    font-size: 1.3rem;
+    padding: 0.7rem;
+  }
+  .error-message {
+    font-size: 0.8rem;
+  }
+  .sign-in-modal {
+    width: 42%;
+  }
+
+  .add-versus-modal {
+    width: 55%;
+  }
+  .btn-app-sides {
+    font-weight: 600;
+  }
+}
+@media (max-width: 37.5em) {
+  .sign-in-modal {
+    width: 50%;
+  }
+  .inside-app-container {
+    gap: 2rem;
+  }
+  .app-header {
+    padding: 2rem;
+  }
+  .app-container {
+    padding: 5rem 2rem;
+  }
+  .logo-header:visited,
+  .logo-header:link {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 31.25em) {
+  .inside-app-container {
+    grid-template-columns: 1fr;
+  }
+  .app-header {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .header-right-place {
+    justify-content: space-between;
+  }
+  .sign-in-modal {
+    width: 63%;
+  }
+  .add-versus-modal {
+    width: 70%;
+  }
+}
+@media (max-width: 22.25em) {
+  .sign-in-modal {
+    width: 85%;
+  }
+
+  .add-versus-modal {
+    width: 95%;
+  }
+}
