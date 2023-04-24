@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Simple App for people choosing one stuff which they like "
+    />
+    <meta
+      name="keywords"
+      content="pickyourside,survey,game,app,basic app,pick"
+    />
+    <title>Pick Your Side</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="pickyourside.js"></script>
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="logo-container">
+        <a class="logo-header" href="#">pickyourside</a>
+      </div>
+      <div class="header-right-place">
+        <div class="username-container">
+          <label class="username-shown">Welcome to PickYourSide</label>
+        </div>
+        <div class="btn-header-swappers">
+          <button class="sign-in-btn btn-sign-in-out">Sign in</button>
+          <button class="sign-out-btn btn-sign-in-out display-none">
+            Sign out
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="app-main">
+      <div class="before-login-container app-container">
+        <h1 class="before-login-header">Sign in to get start</h1>
+        <p class="before-login-secondary-header">About the app</p>
+        <p class="before-login-p">
+          Then you sign in app gonna be open. You can pick one of the sides.
+          Profile creation happens automatically. Get into action :&rpar;
+        </p>
+        <div>
+          <button class="btn-sign-in-out sign-in-btn">Sign in</button>
+        </div>
+      </div>
+      <div class="app-container after-login-container display-none">
+        <header class="header-inside-app">
+          <button class="add-pick-boxing">Create a versus</button>
+        </header>
+
+        <div class="inside-app-container">
+          <div class="topic-box">
+            <div class="versus-container">
+              <span class="result-left result">0</span>
+              <span class="result-dash">-</span>
+              <span class="result-right result">0</span>
+            </div>
+            <div class="btn-app-container">
+              <button class="btn-left btn-app-sides" vote="0" boxnumber="box1">
+                Ferrari
+              </button>
+              <div class="versus">vs</div>
+              <button class="btn-right btn-app-sides" vote="1" boxnumber="box1">
+                Lamborghini
+              </button>
+            </div>
+            <div class="icon-align">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="back-icon opac-zero"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="topic-box">
+            <div class="versus-container">
+              <span class="result-left result">0</span>
+              <span class="result-dash">-</span>
+              <span class="result-right result">0</span>
+            </div>
+            <div class="btn-app-container">
+              <button class="btn-left btn-app-sides" vote="0" boxnumber="box2">
+                Charlotte De Witte
+              </button>
+              <div class="versus">vs</div>
+              <button class="btn-right btn-app-sides" vote="1" boxnumber="box2">
+                Deborah De Luca
+              </button>
+            </div>
+
+            <div class="icon-align">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="back-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="sign-in-modal opac-zero-modals">
+      <button class="modal-close-btn modal-sign-in-close">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="close-btn"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+      <span class="sign-in-modal-heading">Sign in</span>
+      <p class="sign-in-modal-info">
+        You have no need to create account or anything.Just put your username to
+        input field.The username should between 4-15 length
+      </p>
+      <div class="input-field-container">
+        <input
+          type="text"
+          maxlength="15"
+          minlength="3"
+          id="signinname"
+          class="sign-in-input"
+          name="signinname"
+          placeholder="Username"
+          required
+        />
+      </div>
+      <span class="error-message opac-zero"
+        >You cannot use special characters &lpar; *,/,-,_,? , etc&rpar;
+      </span>
+      <div class="btn-align-sign-in">
+        <button class="btn-sign-in btn-modal">Sign in</button>
+      </div>
+    </div>
+    <div
+      class="overlay opac-zero-modals"
+      role="img"
+      aria-label="Sign in modal overlay"
+    ></div>
+    <div class="add-versus-modal opac-zero-modals">
+      <button class="modal-close-btn modal-add-versus-close">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="close-btn"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+      <span class="sign-in-modal-heading">Add versus</span>
+
+      <div>
+        <label for="input-versus-1" class="label-versus">First Side</label>
+        <input
+          type="text"
+          class="input-versus1 input-versus-both"
+          maxlength="15"
+          id="input-versus-1"
+          name="input-versus-1"
+          minlength="3"
+          required
+        />
+      </div>
+      <div>
+        <label for="input-versus-2" class="label-versus">Secondary Side</label>
+        <input
+          type="text"
+          class="input-versus2 input-versus-both"
+          maxlength="15"
+          minlength="3"
+          id="input-versus-2"
+          name="input-versus-2"
+          required
+        />
+      </div>
+
+      <div class="btn-align-sign-in">
+        <button class="versus-create-btn btn-modal">Create</button>
+      </div>
+      <span class="error-message error-message-box opac-zero"
+        >*You cannot use special characters &lpar; *,/,-,_,? , etc&rpar;
+        <br />*You cannot use numbers between 0-9 numbers<br />*Character
+        lengths should between 4-15</span
+      >
+    </div>
+
+    <footer class="footer-app" style="background-color: black">
+      <p class="footer-desc">
+        &copy; made by Mete Karaca in April 2023 &verbar; v1
+      </p>
+    </footer>
+  </body>
+</html>
